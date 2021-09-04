@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <title>Discord Server Card Generator</title>
+</head>
+<body>
+
+<main>
+  <div class="container">
+    <form class="inputs">
+      <label>
+        <span>Header image URL*</span>
+        <input type="text" placeholder="Header image URL" name="headerImageSource">
+      </label>
+
+      <label>
+        <span>Server icon URL*</span>
+        <input type="text" placeholder="Server icon URL" name="serverIconSource">
+      </label>
+
+      <label>
+        <span>Server name*</span>
+        <input type="text" placeholder="Server name" name="serverName">
+      </label>
+
+      <label>
+        <span>Server Description*</span>
+        <input type="text" placeholder="Server Description" name="serverDescription">
+      </label>
+
+
+      <label>
+        <span>Online count*</span>
+        <input type="text" placeholder="Online count" name="onlineCount">
+      </label>
+
+      <label>
+        <span>Member count*</span>
+        <input type="text" placeholder="Member count" name="memberCount">
+      </label>
+
+      <button class="btn" type="submit">Generate!</button>
+    </form>
+
+    <div class="preview"></div>
+  </div>
+
+  <button type="button" class="btn" id="copy-preview">Copy Preview</button>
+</main>
+
+<span class="output"></span>
+
+<footer>This website is not endorsed by or affiliated with Discord.</footer>
+
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
