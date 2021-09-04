@@ -5,7 +5,7 @@ const getPreviewDiv = () => document.querySelector("div.preview");
 const output = (text) => document.querySelector("span.output").innerText = text;
 
 const generatePreview = async () => {
-  const templateResponse = await fetch('/template.html');
+  const templateResponse = await fetch('template.html');
   const template = await templateResponse.text();
 
   const data = new FormData(getForm());
